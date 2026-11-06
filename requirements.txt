@@ -1,0 +1,10 @@
+# QQ AI Video Runtime Core - required dependencies
+#
+# This file is deliberately pure ASCII: pip may decode a requirements file with
+# the system locale codec (e.g. cp936/GBK on Chinese Windows) rather than UTF-8,
+# so any non-ASCII character here can make `pip install -r` fail outright.
+#
+# Hard requirement: the Core modules import this unconditionally.
+# No version pin is declared because no lower bound has been verified on this
+# project. The version actually used for testing is recorded in DEPENDENCIES.md.
+numpy

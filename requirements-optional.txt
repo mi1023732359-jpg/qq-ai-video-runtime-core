@@ -1,0 +1,25 @@
+# QQ AI Video Runtime Core - optional dependencies
+#
+# Pure ASCII on purpose: pip may decode requirements files with the system locale
+# codec, and a single non-ASCII character can make `pip install -r` fail.
+#
+# These are imported lazily (inside functions), so Core imports and its unit
+# tests run without them. Install the group you actually need.
+#
+# No version pins are declared: no lower bound has been verified here.
+# Tested versions are recorded in DEPENDENCIES.md.
+
+# Local speech-to-text (video_runtime/asr_in.py -> WhisperTranscriber).
+# Without it, ASR falls back to the fake/stub transcriber used by tests.
+faster-whisper
+
+# Device-level WASAPI loopback capture (video_runtime/audio_capture.py).
+# Used by the system-loopback capture path, not by process loopback.
+PyAudioWPatch
+
+# Audio playback for TTS output (video_runtime/audio_out.py).
+sounddevice
+
+# NOTE: `voice_out` is NOT installable from PyPI. It is a module that must exist
+# inside the directory you point QQAI_BOT_DIR / QQAI_BOT_CONFIG at. It is
+# optional: without it the QQAI-side TTS path is skipped.
