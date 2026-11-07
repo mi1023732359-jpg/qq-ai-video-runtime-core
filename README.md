@@ -8,7 +8,21 @@ application's audio, transcribes it locally, drives a dialogue loop, and emits
 Live2D expression/mouth state.
 
 > **Status: experimental source preview. MIT licensed. Maintained by Melarizan.
-> Not a release, and not ready for production use.**
+> ## Release Status
+
+**Experimental Preview — v0.1.0**
+
+This project is an experimental source preview,
+not a production-ready stable release.
+
+Real-world end-to-end QQ video call validation
+is still incomplete.
+
+Some features and hardware-dependent behaviors
+remain unverified.
+
+Please review KNOWN_ISSUES.md before attempting
+to use this project. and not ready for production use.**
 >
 > **A real QQ video call has not been accepted end-to-end from this tree.** Do not
 > read "runtime" as "working product". See *What this is not* below.
