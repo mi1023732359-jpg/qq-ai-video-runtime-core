@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qqai-high-risk-call-control"
+version = "0.1.0"
+description = "HIGH RISK (default-off) optional extension: QQ video-call auto-answer/auto-hangup via verified UI automation. Not part of Core. Unverified on real QQ."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Melarizan" }]
+keywords = ["qq", "live2d", "automation", "high-risk", "opt-in", "experimental"]
+classifiers = [
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Multimedia :: Video",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/mi1023732359-jpg/qq-ai-video-runtime-core"
+Source = "https://github.com/mi1023732359-jpg/qq-ai-video-runtime-core"
+Documentation = "https://github.com/mi1023732359-jpg/qq-ai-video-runtime-core"
+
+[tool.setuptools]
+packages = ["high_risk_call_control", "high_risk_call_control.tests"]
+package-dir = { "" = "." }
+
+[tool.setuptools.package-data]
+high_risk_call_control = ["*.md", "config.example.json"]
