@@ -8,3 +8,10 @@ logs/
 *.key
 *.pem
 .venv/
+
+# high_risk_call_control 扩展的审计/状态文件（默认不提交）
+packages/qqai-high-risk-call-control/high_risk_call_control/logs/
+packages/qqai-high-risk-call-control/answer_confirm.json
+packages/qqai-high-risk-call-control/qq_window_fingerprint.json
+packages/qqai-high-risk-call-control/STOP
+*_audit.jsonl
